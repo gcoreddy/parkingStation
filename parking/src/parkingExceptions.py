@@ -1,40 +1,42 @@
-class NoSpaceLeft(Exception):
-    pass
-   
-class vehicalAlreadyAdded(Exception):
-    pass
-   
-class vehicalAlreadyRemoved(Exception):
-    pass
-	
 class NoSpaceLeftInParking(Exception):
+    '''Exception for no space left in the parking.'''
     pass
 
 class CarWithSameNumExist(Exception):
+    '''Exception if car is already parked with the same number.'''
     pass
 
 class LocationEmpty(Exception):
+    '''Exception if user tries to remove a parking slot which is not occupied.'''
     pass
 
 class NoCarFound(Exception):
+    '''Exception if there is no car with the name specified.'''
     pass
 	
 class InvalidTariff(Exception):
+    '''Exception if user selects invalid tariff plan.'''
     pass
 	
 class NoCarstoDisplay(Exception):
+    '''Exception if there are no cars exists in the parking.'''
     pass
 	
 class LevelWithTheSameName(Exception):
+    '''Exception while creating a new level.
+	   throws an exception if there is a level with the same name exist'''
     pass
 	
 class TariffPlanDoesntExist(Exception):
+    '''Exception if there is no tariffPlan defined.'''
     pass
 	
 class MultipleCarsWithSameLocation(Exception):
+    '''Exception if database shows multiple cars with the same location spot'''
     pass
 	
 class ParkingLevelDoesntExist(Exception):
+    '''Exception if there is no Parking level exist in the station.'''
     pass
 	
 parkingExceptionsDict = {
